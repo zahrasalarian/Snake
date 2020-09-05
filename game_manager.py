@@ -69,5 +69,5 @@ class GameManager:
             t = threading.Thread(target=snake.next_move())
             t.start()
         self.turn += 1
-        if (self.turn % 10) == 0:
+        if (self.turn % 20) == 0:
             self.get_cell(self.get_next_fruit_pos()).set_color(consts.fruit_color)
